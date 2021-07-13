@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang = "pt-br">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../inicial/design/www.png" >
+
+        <meta name="description" content="ATIVIDADE_2_AW1">
+        <meta name="author" content="Nicole Rodrigues">
+      
+        <title>Cadastro</title>
+    </head>
+
+
+    <body>
+        <header>
+            <nav>
+                <hr>
+                <img src="../inicial/design/bonner.jpg" style="width: 10%; height:120px">
+                <img src="../inicial/design/plantao.jpg" style="width: 89.6%; height:120px">
+                <ul>
+                    <li> <a href="../inicial/index.html"> Página inicial </a></li>
+                    <li> <a href="#"> Cadastre-se </a></li>
+                    <li> <a href="../informaces/info.html"> Mais informações </a></li>
+                </ul>
+                <hr>
+            </nav>
+        </header>
+
+        <h3> Faça seu cadastro! </h3>
+        <form>
+                <fieldset id="usuario" style="width: 50%;">
+                    <legend>Identificações de usuário</legend>
+
+                    <label for="label-login">Login: </label>
+                    <br>
+                    <input type="text" id="login" name="login" maxlength="30" placeholder="Nome de usuário">
+                    <br><br>
+            
+                    <label for="label-senha">Senha: </label>
+                    <br>
+                    <input type="password" id="password_id" name="password" size =”15” maxlength =”8” placeholder="Senha" required autofocus>
+                </fieldset>
+
+                <fieldset id="pessoal" style="width: 50%;">
+                    <legend>Identificação pessoal</legend>
+
+                    <label for="label-nome">Nome*: </label>
+                    <br>
+                    <input type="text" id="nome" name="nome" maxlength="50" placeholder="Nome completo" required>
+                    <br><br>
+
+                    <label for="label-data">Data de nascimento*: </label>
+                    <br>
+                    <input type="date" id="data" name="data" required>
+                    <br><br>
+
+                    <label for="label-genero">Gênero*: </label>
+                    <br>
+                    <input type="radio" id="feminino" name="genero" required>
+                    <label for="feminino">Feminino</label>
+
+                    <input type="radio" id="masculino" name="genero"required>
+                    <label for="masculino">Masculino</label>
+
+                    <input type="radio" id="agenero" name="genero" required>
+                    <label for="agenero">Agênero</label>
+
+                    <input type="radio" id="bigenero" name="genero" required>
+                    <label for="bigenero">Bigênero</label>
+
+                    <input type="radio" id="naoresp" name="genero" required>
+                    <label for="naoresp">Prefiro não responder</label>
+
+                    <br><br>
+                    <label for="label-rg">RG*: </label>
+                    <input type="text" id="rg" name="rg" maxlength="6" placeholder="Ex.: 00.000.000-0" required>
+                    
+                    &nbsp;&nbsp;
+                    <label for="label-rg">Unidade Federativa do RG*: </label>
+                    <input type="text" id="input-rg" name="rg" list="uf-rg">
+                    <datalist id="uf-rg" name="rg">
+                        <option value="AC" label="Acre">
+                        <option value="AL" label="Alagoas">
+                        <option value="AP" label="Amapá">
+                        <option value="AM" label="Amazonas">
+                        <option value="BA" label="Bahia">
+                        <option value="CE" label="Ceará">
+                        <option value="ES" label="Espírito Santo">
+                        <option value="GO" label="Goiás">
+                        <option value="MA" label="Maranhão">
+                        <option value="MT" label="Mato Grosso">
+                        <option value="MS" label="Mato Grosso do Sul">
+                        <option value="MG" label="Minas Gerais">
+                        <option value="PA" label="Pará">
+                        <option value="PB" label="Paraíba">
+                        <option value="PR" label="Paraná">
+                        <option value="PE" label="Pernambuco">
+                        <option value="PI" label="Piauí">
+                        <option value="RJ" label="Rio de Janeiro">
+                        <option value="RN" label="Rio Grande do Norte">
+                        <option value="RS" label="Rio Grande do Sul">
+                        <option value="RO" label="Rondônia">
+                        <option value="RR" label="Roraima">
+                        <option value="SC" label="Santa Catarina">
+                        <option value="SP" label="São Paulo">
+                        <option value="SE" label="Sergipe">
+                        <option value="TO" label="Tocantins">
+                        <option value="DF" label="Distrito Federal">
+                    </datalist>
+
+                    <br><br>
+
+                    <label for="label-cpf">CPF*: </label>
+                    <br>
+                    <input type="text" id="cpf" name="cpf" maxlength="11" placeholder="Ex.: 000.000.000-00" required>
+                    <br><br>
+
+                    <label for="label-tel">Telefone fixo: </label>
+                    <br>
+                    <input type="tel" id="tel" name="tel"  placeholder="(00)0000-0000"maxlength="13">
+                    <br><br>
+              
+                    <label for="label-cel">Celular: </label>
+                    <br>
+                    <input type="tel" id="cel" name="cel" placeholder="(00)00000-0000" maxlength="14">
+                    <br><br>
+              
+                    <label for="label-email">E-mail*: </label>
+                    <br>
+                    <input type="email" id="email" name="email" placeholder="E-mail pessoal" required>
+                </fieldset>
+
+                <fieldset id="endereco" style="width: 50%;">
+                    <legend>Endereço</legend>
+
+                    <label for="label-rua">Rua: </label>
+                    <br>
+                    <input type="text" id="rua" name="rua" maxlength="60" placeholder="Rua">
+                    <br><br>
+
+                    <label for="label-num">Número: </label>
+                    <br>
+                    <input type="number" id="num" name="num" placeholder="Número de casa">
+                    <br><br>
+
+                    <label for="label-complemento">Complemento: </label>
+                    <br>
+                    <input type="text" id="complemento" name="complemento" maxlength="20" placeholder="Complemento do endereço">
+                    <br><br>
+
+                    <label for="label-cep">CEP: </label>
+                    <br>
+                    <input type="text" id="cep" name="cep" placeholder="Ex.: 00000-000" pattern="[0-9]{5}-[0-9]{3}">
+                    <br><br>
+
+                    <label for="label-cidade">Cidade:</label>
+                    <br>
+                    <input type="text" id="cidade" name="cidade" list="cidade" placeholder="Cidade">
+                    <datalist id="cidade">
+                        <select id="cidade" name="cidade">
+                            <option value="Aruja" label="Arujá">
+                            <option value="Itaqua" label="Itaquaquecetuba">
+                            <option value="Diadema" label="Diadema">
+                            <option value="Maua" label="Mauá">
+                            <option value="Mogi" label="Mogi das Cruzes">
+                            <option value="Riberão Pires" label="Riberão Pires">
+                            <option value="Santa Isabel" label="Santa Isabel">
+                        </select>
+                    </datalist>
+                    <br><br>
+
+                    <label for="uf">UF: </label>
+                    <br>
+                    <input type="text" id="uf" name="uf" value="SP" readonly>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Dados complementares</legend>
+
+                    <label for="label-genero">Estado civil: </label>
+                    <br>
+                    <input type="radio" id="casado" name="civil" required>
+                    <label for="label-feminino">Casado</label>
+
+                    <input type="radio" id="viuvo" name="civil"required>
+                    <label for="label-masculino">Viuvo</label>
+
+                    <input type="radio" id="divorciado" name="civil" required>
+                    <label for="label-agenero">Divorciado</label>
+
+                    <input type="radio" id="solteiro" name="civil" required>
+                    <label for="label-bigenero">Solteiro</label>
+                    <br><br>
+
+                    <label for="label-profissao">Profissão: </label>
+                    <br>
+                    <input type="text" id="profissao" name="profissao" maxlength="60" placeholder="Profissão atual">
+                    <br><br>
+
+                    <label for="label-vacinado">Vacinado? </label>
+                    <br>
+                    <input type="radio" id="vacina-sim" name="vacina" required>
+                    <label for="label-vacina">Sim</label>
+                    <input type="radio" id="vacina-nao" name="vacina" required>
+                    <label for="label-vacina">Não</label>
+                    <br><br>
+
+                    <input type="checkbox" id="hipertensão" name="comorbidade" value="Hipertensão">
+                    <label for="label-hipertensão">Hipertensão</label>
+                    <br>
+
+                    <input type="checkbox" id="doencarenal" name="comorbidade" value="Doença Renal Cronica">
+                    <label for="label-renal">Doença Renal Cronica</label>
+                    <br>
+
+                    <input type="checkbox" id="imunossuprimidos" name="comorbidade" value="Imunossuprimidos">
+                    <label for="label-imunossuprimidos">Imunossuprimidos</label>
+                    <br>
+
+                    <input type="checkbox" id="anemiafalciforme" name="comorbidade" value="Anemia Falciforme">
+                    <label for="label-falciforme">Anemia Falciforme</label>
+                    <br>
+
+                    <input type="checkbox" id="iobesidademorbida" name="comorbidade" value="Obesidade Mórbida">
+                    <label for="label-obesidade">Obesidade Mórbida</label>
+                    <br>
+
+                    <input type="checkbox" id="cirrosehepatica" name="comorbidade" value="Cirrose Hepatica">
+                    <label for="label-cirrose">Cirrose Hepatica</label>
+                    <br>
+                </fieldset>
+
+                <button type="submit" id="button">Enviar</button>
+
+                <input type="reset" value="Limpar">
+
+        </form>
+
+        <!--Rodapé-->
+        <hr>
+        <footer style="background-image: url(../inicial/design/azul.jpg) ;">
+            <ul>
+                <li><a href="nicolerodrigues.dev@gmail.com">Contato por email</a></li>
+            </ul>
+
+            <p>© Nicole Rodrigues - todos os direitos reservados</p>
+         </footer>
+    </body>
+
+</html>
